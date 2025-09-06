@@ -75,6 +75,30 @@ nav a:hover {
     display: none;
 }
 
+.profile-pic {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid var(--primary-color);
+}
+
+#courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses li {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+
+
 footer {
     text-align: center;
     padding: 1rem;
