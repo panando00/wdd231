@@ -97,7 +97,22 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
 
+.social-links img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
 
 footer {
     text-align: center;
