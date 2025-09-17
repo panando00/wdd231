@@ -1,8 +1,8 @@
-// ===== Footer Year & Last Modified =====
+
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-// ===== Mobile Menu Toggle =====
+
 const menuBtn = document.getElementById("menu");
 const navMenu = document.getElementById("navMenu");
 
@@ -10,7 +10,6 @@ menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
-// ===== Grid/List Toggle =====
 const gridBtn = document.getElementById("gridView");
 const listBtn = document.getElementById("listView");
 const memberContainer = document.getElementById("memberContainer");
@@ -29,7 +28,7 @@ listBtn.addEventListener("click", () => {
   memberContainer.classList.add("list-view");
 });
 
-// ===== Fetch and Display Members =====
+
 async function loadMembers() {
   try {
     const res = await fetch("data/members.json");
@@ -73,5 +72,4 @@ function displayMembers(members) {
   });
 }
 
-// ===== Initialize =====
 loadMembers();
