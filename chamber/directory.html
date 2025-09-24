@@ -3,48 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mkoba Gweru Chamber of Commerce Business Directory">
-  <meta name="author" content="Prosper Zvidzai">
+  <title>Member Directory - Mkoba Gweru Chamber</title>
+  <meta name="description" content="Directory of businesses and organizations in Mkoba Gweru Chamber of Commerce.">
+  <meta name="author" content="Prosper Panashe Zvidzai">
   <link rel="icon" href="images/favicon.ico">
-  <meta property="og:title" content="Mkoba Gweru Chamber of Commerce">
-  <meta property="og:description" content="Discover businesses in Mkoba, Gweru. Support local companies and grow your network.">
-  <meta property="og:image" content="images/chamber-preview.png">
-  <meta property="og:url" content="https://panando00.github.io/wdd231/chamber/directory.html">
-  <meta property="og:type" content="website">
-  <title>Mkoba Gweru Chamber Directory</title>
   <link rel="stylesheet" href="styles/chamber.css">
 </head>
 <body>
   <header>
     <div class="logo-title">
-      <img src="images/chamber-logo.png" alt="Mkoba Chamber Logo" class="logo">
-      <h1>Mkoba Gweru Chamber of Commerce</h1>
+      <img src="images/chamber-logo.png" alt="Chamber Logo" class="logo">
+      <h1>Mkoba Gweru Chamber</h1>
     </div>
-    <button id="menu" aria-label="Toggle Menu">☰</button>
-    <nav id="navMenu" class="hidden">
-      <a href="directory.html" aria-current="page">Directory</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <button id="menu" aria-label="Menu">☰</button>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html" aria-current="page">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
 
   <main>
     <h2>Business Directory</h2>
+
     <div class="view-toggle">
-      <button id="gridView" class="active">Grid View</button>
-      <button id="listView">List View</button>
+      <button id="grid-view" class="active">Grid View</button>
+      <button id="list-view">List View</button>
     </div>
-    <section id="memberContainer" class="grid-view"></section>
+
+    <div id="members" class="grid-view">
+    </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Mkoba Gweru Chamber of Commerce</p>
-    <p>Address: Mkoba 6 Shopping Centre, Gweru, Zimbabwe | Phone: +263 77 234 5678</p>
-    <p id="lastModified"></p>
+    <p>📍 Mkoba 5, Gweru, Zimbabwe</p>
+    <p>☎ +263 71 234 5678</p>
+    <p>&copy; <span id="year"></span> Mkoba Gweru Chamber | WDD 231</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/chamber.js" type="module"></script>
+  <script src="scripts/directory.js" type="module"></script>
 </body>
 </html>
+
 
 

@@ -1,75 +1,52 @@
+const membersContainer = document.getElementById("members");
+const gridBtn = document.getElementById("grid-view");
+const listBtn = document.getElementById("list-view");
 
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
-
-
-const menuBtn = document.getElementById("menu");
-const navMenu = document.getElementById("navMenu");
-
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("hidden");
-});
-
-const gridBtn = document.getElementById("gridView");
-const listBtn = document.getElementById("listView");
-const memberContainer = document.getElementById("memberContainer");
-
-gridBtn.addEventListener("click", () => {
-  gridBtn.classList.add("active");
-  listBtn.classList.remove("active");
-  memberContainer.classList.remove("list-view");
-  memberContainer.classList.add("grid-view");
-});
-
-listBtn.addEventListener("click", () => {
-  listBtn.classList.add("active");
-  gridBtn.classList.remove("active");
-  memberContainer.classList.remove("grid-view");
-  memberContainer.classList.add("list-view");
-});
-
-
-async function loadMembers() {
+async function fetchMembers() {
   try {
-    const res = await fetch("data/members.json");
-    if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
-    const data = await res.json();
-    displayMembers(data.members);
-  } catch (err) {
-    memberContainer.innerHTML = `<p class="error">Failed to load members: ${err}</p>`;
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error("Failed to fetch members.json");
+
+    const members = await response.json();
+    displayMembers(members);
+  } catch (error) {
+    console.error("Error loading members:", error);
+    membersContainer.innerHTML = "<p>⚠️ Could not load member directory.</p>";
   }
 }
 
 function displayMembers(members) {
-  memberContainer.innerHTML = "";
+  membersContainer.innerHTML = "";
 
-  members.forEach((member) => {
-    const card = document.createElement("article");
+  members.forEach(member => {
+    const card = document.createElement("div");
     card.classList.add("member-card");
 
-    const img = document.createElement("img");
-    img.src = member.image || "images/members/placeholder.webp";
-    img.alt = `${member.name} Logo`;
-    img.loading = "lazy";
+    card.innerHTML = `
+      <img src="images/members/${member.image}" alt="${member.name} logo">
+      <h3>${member.name}</h3>
+      <p>${member.address}</p>
+      <p>☎ ${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
 
-    const name = document.createElement("h3");
-    name.textContent = member.name;
-
-    const address = document.createElement("p");
-    address.textContent = member.address;
-
-    const phone = document.createElement("p");
-    phone.textContent = `📞 ${member.phone}`;
-
-    const link = document.createElement("a");
-    link.href = member.url;
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.textContent = "Visit Website";
-
-    card.append(img, name, address, phone, link);
-    memberContainer.appendChild(card);
+    membersContainer.appendChild(card);
   });
 }
 
-loadMembers();
+gridBtn.addEventListener("click", () => {
+  membersContainer.classList.remove("list-view");
+  membersContainer.classList.add("grid-view");
+  gridBtn.classList.add("active");
+  listBtn.classList.remove("active");
+});
+
+listBtn.addEventListener("click", () => {
+  membersContainer.classList.remove("grid-view");
+  membersContainer.classList.add("list-view");
+  listBtn.classList.add("active");
+  gridBtn.classList.remove("active");
+});
+
+
+fetchMembers();

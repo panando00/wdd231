@@ -1,69 +1,58 @@
-
-{
-  "members": [
-    {
-      "name": "Mkoba Fresh Grocers",
-      "address": "Shop 12, Mkoba 6 Shopping Centre, Gweru, Zimbabwe",
-      "phone": "+263 77 123 4567",
-      "url": "https://example.com/mkoba-grocers",
-      "image": "images/members/placeholder.webp",
-      "membership": 3
-    },
-    {
-      "name": "Gweru Auto Spares & Repairs",
-      "address": "Stand 45, Mkoba 4 Industrial Area, Gweru, Zimbabwe",
-      "phone": "+263 71 234 5678",
-      "url": "https://example.com/gweru-auto",
-      "image": "images/members/placeholder.webp",
-      "membership": 2
-    },
-    {
-      "name": "Midlands Tech Hub",
-      "address": "Room 5, Mkoba Teachers’ College Complex, Gweru, Zimbabwe",
-      "phone": "+263 78 765 4321",
-      "url": "https://example.com/midlands-tech",
-      "image": "images/members/placeholder.webp",
-      "membership": 1
-    },
-    {
-      "name": "Savannah Bakery Mkoba",
-      "address": "Mkoba 14 Shopping Centre, Gweru, Zimbabwe",
-      "phone": "+263 77 456 7890",
-      "url": "https://example.com/savannah-bakery",
-      "image": "images/members/placeholder.webp",
-      "membership": 2
-    },
-    {
-      "name": "Mkoba Hardware & Building Supplies",
-      "address": "Shop 3, Mkoba 9 Shops, Gweru, Zimbabwe",
-      "phone": "+263 71 345 6789",
-      "url": "https://example.com/mkoba-hardware",
-      "image": "images/members/placeholder.webp",
-      "membership": 3
-    },
-    {
-      "name": "Gweru Wellness Pharmacy",
-      "address": "Mkoba 5 Clinic Complex, Gweru, Zimbabwe",
-      "phone": "+263 78 321 6543",
-      "url": "https://example.com/gweru-pharmacy",
-      "image": "images/members/placeholder.webp",
-      "membership": 1
-    },
-    {
-      "name": "Tropical Internet Café",
-      "address": "Mkoba 7 Shopping Centre, Gweru, Zimbabwe",
-      "phone": "+263 77 789 0123",
-      "url": "https://example.com/tropical-cafe",
-      "image": "images/members/placeholder.webp",
-      "membership": 2
-    },
-    {
-      "name": "Lionheart Security Services",
-      "address": "Stand 102, Mkoba 15 Light Industrial Site, Gweru, Zimbabwe",
-      "phone": "+263 71 987 6543",
-      "url": "https://example.com/lionheart-security",
-      "image": "images/members/placeholder.webp",
-      "membership": 3
-    }
-  ]
-}
+[
+  {
+    "name": "Mkoba Fresh Grocers",
+    "address": "Shop 12, Mkoba 6 Shopping Centre, Gweru",
+    "phone": "+263 71 456 7890",
+    "website": "https://mkobafresh.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Savannah Bakery",
+    "address": "Stand 221, Mkoba 5, Gweru",
+    "phone": "+263 77 234 5678",
+    "website": "https://savannahbakery.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Midlands Hardware",
+    "address": "Mkoba 14 Business Centre, Gweru",
+    "phone": "+263 71 987 6543",
+    "website": "https://midlandshardware.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Member"
+  },
+  {
+    "name": "Gweru Tech Solutions",
+    "address": "Room 4, Mkoba 5 Offices, Gweru",
+    "phone": "+263 78 555 1122",
+    "website": "https://gwerutech.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Greenfields Pharmacy",
+    "address": "Shop 3, Mkoba 15 Shops, Gweru",
+    "phone": "+263 77 333 4444",
+    "website": "https://greenfieldspharma.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Chiedza Tailoring",
+    "address": "Stand 90, Mkoba 9, Gweru",
+    "phone": "+263 71 444 2222",
+    "website": "https://chiedzatailoring.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Member"
+  },
+  {
+    "name": "Sunshine Transport",
+    "address": "Stand 301, Mkoba 18, Gweru",
+    "phone": "+263 78 222 3344",
+    "website": "https://sunshinetransport.co.zw",
+    "image": "placeholder.webp",
+    "membership": "Gold"
+  }
+]
