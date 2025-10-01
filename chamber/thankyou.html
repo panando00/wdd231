@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Mkoba Gweru Chamber</title>
+  <meta name="description" content="Confirmation page for the Mkoba Gweru Chamber of Commerce membership application.">
+  <meta name="author" content="Prosper Zvizai">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/chamber-logo.png" alt="Chamber Logo" class="logo">
+      <h1>Mkoba Gweru Chamber of Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You!</h2>
+    <p>Your membership application has been submitted. Here are the details we received:</p>
+
+    <div class="form-results">
+      <p><strong>First Name:</strong> <span id="fname"></span></p>
+      <p><strong>Last Name:</strong> <span id="lname"></span></p>
+      <p><strong>Organization Title:</strong> <span id="orgtitle"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Business Name:</strong> <span id="bname"></span></p>
+      <p><strong>Membership Level:</strong> <span id="membership"></span></p>
+      <p><strong>Description:</strong> <span id="desc"></span></p>
+      <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>📍 Mkoba 5, Gweru, Zimbabwe</p>
+    <p>☎ +263 71 234 5678</p>
+    <p>&copy; <span id="year"></span> Mkoba Gweru Chamber | WDD 231</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/chamber.js"></script>
+  <script src="scripts/thankyou.js"></script>
+</body>
+</html>
+
+
