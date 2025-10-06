@@ -1,0 +1,91 @@
+
+[
+  {
+    "name": "Mkoba 6 Market",
+    "image": "images/discover/mkoba6-market.webp",
+    "alt": "Vendors and shoppers at Mkoba 6 market",
+    "width": 640,
+    "height": 400,
+    "caption": "Local produce and everyday goods.",
+    "address": "Mkoba 6, Gweru",
+    "description": "A vibrant community market known for fresh vegetables, crafts, and affordable household items.",
+    "url": "https://en.wikipedia.org/wiki/Gweru"
+  },
+  {
+    "name": "Gweru Memorial Clock Tower",
+    "image": "images/discover/clock-tower.webp",
+    "alt": "Historic clock tower in Gweru",
+    "width": 640,
+    "height": 400,
+    "caption": "A central city landmark.",
+    "address": "Leopold Takawira Ave, Gweru CBD",
+    "description": "Iconic city clock tower and a handy meeting point surrounded by shops and cafés.",
+    "url": "https://en.wikipedia.org/wiki/Gweru"
+  },
+  {
+    "name": "Antelope Park",
+    "image": "images/discover/antelope-park.webp",
+    "alt": "Open savannah scene at Antelope Park",
+    "width": 640,
+    "height": 400,
+    "caption": "Conservation and outdoor activities.",
+    "address": "Vungu Rd, Gweru",
+    "description": "Private wildlife park offering game drives, birding, canoeing, and family-friendly outdoor spaces.",
+    "url": "https://www.antelopepark.co.zw/"
+  },
+  {
+    "name": "Gweru River Walk",
+    "image": "images/discover/gweru-river-walk.webp",
+    "alt": "Pedestrian path along the river",
+    "width": 640,
+    "height": 400,
+    "caption": "Relaxed stroll by the water.",
+    "address": "Near Woodlands, Gweru",
+    "description": "A casual riverside path popular with joggers and families, especially at sunset.",
+    "url": ""
+  },
+  {
+    "name": "Mkoba Teachers’ College Grounds",
+    "image": "images/discover/mtc-grounds.webp",
+    "alt": "Green sports fields and campus buildings",
+    "width": 640,
+    "height": 400,
+    "caption": "Education hub and open fields.",
+    "address": "Mkoba 17, Gweru",
+    "description": "Campus greens and sports fields that host local community events and school competitions.",
+    "url": ""
+  },
+  {
+    "name": "Boggie Clock",
+    "image": "images/discover/boggie-clock.webp",
+    "alt": "Historic Boggie Clock monument",
+    "width": 640,
+    "height": 400,
+    "caption": "Historic monument and photo spot.",
+    "address": "Main St, Gweru CBD",
+    "description": "Another of the city’s recognizable landmarks, tied to the area’s early civic history.",
+    "url": ""
+  },
+  {
+    "name": "Matobo Craft Stalls (Pop-up)",
+    "image": "images/discover/craft-stalls.webp",
+    "alt": "Handmade baskets and carvings",
+    "width": 640,
+    "height": 400,
+    "caption": "Artisanal goods by local makers.",
+    "address": "Various weekend spots, Gweru",
+    "description": "Occasional stalls selling woven baskets, beadwork, and wood carvings at community events.",
+    "url": ""
+  },
+  {
+    "name": "Mkoba Community Library",
+    "image": "images/discover/mkoba-library.webp",
+    "alt": "Small community library entrance",
+    "width": 640,
+    "height": 400,
+    "caption": "Quiet study and reading space.",
+    "address": "Mkoba 13, Gweru",
+    "description": "Reading room and resource center supporting students with study materials and Wi-Fi.",
+    "url": ""
+  }
+]

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mkoba Gweru Chamber • Discover</title>
+  <meta name="description" content="Discover Mkoba and Gweru: places of interest, markets, parks, and landmarks near our chamber area.">
+  <meta name="author" content="Prosper Zvidzai">
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Mkoba Gweru Chamber • Discover">
+  <meta property="og:description" content="Explore 8+ places of interest around Mkoba and Gweru.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/chamber-preview.png">
+  <meta property="og:url" content="">
+  <link rel="preload" href="styles/chamber.css" as="style">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/discover.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/chamber-logo.png" alt="Chamber Logo" class="logo">
+      <h1>Mkoba Gweru Chamber of Commerce</h1>
+    </div>
+    <button id="menu" aria-label="Menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="dicover.html" aria-current="page">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="visit-note">
+      <p id="visitMessage"></p>
+    </section>
+
+    <section class="discover-section">
+      <h1>Discover Mkoba & Gweru</h1>
+      <div id="discoverGrid" class="discover-grid" aria-live="polite"></div>
+      <noscript>
+        <p>Please enable JavaScript to view discover cards.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer>
+    <p>📍 Mkoba 5, Gweru, Zimbabwe</p>
+    <p>☎ +263 71 234 5678</p>
+    <p>&copy; <span id="year"></span> Mkoba Gweru Chamber | WDD 231</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/discover.js" type="module" defer></script>
+</body>
+</html>

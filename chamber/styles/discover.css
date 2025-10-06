@@ -1,0 +1,88 @@
+.discover-section {
+    max-width: 1200px; 
+    margin-inline: auto; 
+    padding: 1rem;
+}
+.discover-section h1 {
+    text-align: center; 
+    margin: 0 0 1rem;
+}
+.visit-note {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: .5rem 1rem;
+}
+#visitMessage {
+    text-align: center; 
+    font-weight: 600;
+}
+
+.discover-grid {
+    display: grid; 
+    gap: 1rem;
+}
+.card {
+    background: #fff; 
+    border: 1px solid rgba(0,0,0,.1); 
+    border-radius: .75rem; 
+    overflow: clip; 
+    padding: .75rem; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: .75rem;
+}
+.card h2 {font-size: 1.25rem; margin: .25rem 0}
+.card figure {margin: 0}
+.card img {width: 100%; height: auto; border-radius: .5rem}
+.card p {margin: 0}
+.card address {font-style: italic; opacity: .9; margin-top: .25rem}
+.card .btn {display: block; text-align: center; margin-top: .5rem; padding: .6rem .8rem; border-radius: 999px; background: #333; color: #fff; text-decoration: none}
+
+@media (min-width: 641px) {
+  .card {grid-template-columns: 320px 1fr; align-items: center}
+  .card figure {max-width: 320px}
+  .card img:hover {transform: scale(1.02); filter: contrast(105%) saturate(110%); transition: transform .25s ease, filter .25s ease}
+}
+
+@media (max-width: 640px) {
+  .card img {aspect-ratio: 16/9; object-fit: cover}
+}
+
+.discover-grid {grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  "g"
+  "h"
+}
+
+.poi-1 {grid-area: a}
+.poi-2 {grid-area: b}
+.poi-3 {grid-area: c}
+.poi-4 {grid-area: d}
+.poi-5 {grid-area: e}
+.poi-6 {grid-area: f}
+.poi-7 {grid-area: g}
+.poi-8 {grid-area: h}
+
+@media (min-width: 641px) {
+  .discover-grid {grid-template-columns: 1fr 1fr; grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-grid {grid-template-columns: 1fr 1fr; grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+  }
+}
+
