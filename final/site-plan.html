@@ -1,134 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Math Lab Station | Project Site Plan</title>
-  <meta name="description" content="Project site plan for Math Lab Station: a mini TEMU-style store for affordable educational resources for students in Africa.">
+  <title>Site Plan • Math Lab Station</title>
+  <meta name="description" content="Project site plan for Math Lab Station.">
   <meta name="author" content="Prosper Zvidzai">
-  <meta property="og:title" content="Math Lab Station | Project Site Plan">
-  <meta property="og:description" content="Plan, purpose, scenarios, color schema, typography, and wireframes for the Math Lab Station website.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles/site-plan.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>Math Lab Station <span class="badge">Site Plan</span></h1>
-    <p>Mini TEMU-style store for affordable learning resources for students in Africa</p>
+  <header class="site-header">
+    <a class="brand" href="./"><span aria-hidden="true">▦</span> Math Lab Station</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span class="menu-icon"></span></button>
+    <nav id="primary-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="./" data-nav="home">Home</a></li>
+        <li><a href="products.html" data-nav="products">Products</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="site-plan.html" aria-current="page">Site Plan</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>1. Site Name</h2>
-      <p><strong>Math Lab Station</strong> (domain example: <span class="usage">mathlabstation.com</span>)</p>
-    </section>
-
-    <section class="card">
-      <h2>2. Site Purpose</h2>
-      <p>Provide a simple, mobile-first storefront where families and schools can purchase affordable educational products such as stationery, phonics cards, children’s storybooks, art supplies, and study resources. The site highlights promotions, supports product filtering, and offers clear contact and ordering information.</p>
-    </section>
-
-    <section class="card">
-      <h2>3. User Scenarios</h2>
-      <ul>
-        <li>A parent wants low-cost phonics cards and a starter set of crayons and searches products by category and price.</li>
-        <li>A teacher needs to bulk order exercise books and checks stock, unit pricing, and delivery options.</li>
-        <li>A guardian views featured storybooks, opens a details modal, and adds items to a shortlist remembered on the device.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>4. Color Schema</h2>
-      <div class="grid two">
-        <div class="swatch">
-          <span class="dot" style="background:#0ea5a6"></span>
-          <div>
-            <strong>Teal — #0ea5a6</strong>
-            <div class="usage">Primary brand for headings, links, buttons, accents</div>
-          </div>
-        </div>
-        <div class="swatch">
-          <span class="dot" style="background:#f59e0b"></span>
-          <div>
-            <strong>Amber — #f59e0b</strong>
-            <div class="usage">Secondary accent for badges, highlights, sale chips</div>
-          </div>
-        </div>
-        <div class="swatch">
-          <span class="dot" style="background:#1f2937"></span>
-          <div>
-            <strong>Deep Gray — #1f2937</strong>
-            <div class="usage">Body text and high-contrast elements</div>
-          </div>
-        </div>
-        <div class="swatch">
-          <span class="dot" style="background:#f7f8fa; border:1px solid #e5e7eb"></span>
-          <div>
-            <strong>Soft Background — #f7f8fa</strong>
-            <div class="usage">Page backgrounds and cards</div>
-          </div>
-        </div>
-      </div>
-
-      <h3>Schema Applied in This Document</h3>
-      <div class="example">
-        <p class="heading-font">Headings use the teal brand color and bold weight.</p>
-        <p class="body-font">Body content uses deep gray on a soft background for comfortable reading.</p>
-        <p><span class="badge" style="background:#f59e0b">Amber badge</span> illustrates the secondary accent.</p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>5. Typography</h2>
-      <p><strong>Headings:</strong> Segoe UI/Roboto/Inter stack, bold, teal.</p>
-      <p><strong>Body:</strong> System UI stack for performance and legibility.</p>
-      <div class="example">
-        <h3 class="heading-font">Heading example</h3>
-        <p class="body-font">This paragraph demonstrates the body font. The system stack keeps page weight low and ensures good rendering on diverse devices.</p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>6. Wireframes</h2>
-      <div class="wireframes">
-        <div class="wf">
-          <h3>Mobile – Home</h3>
-          <svg viewBox="0 0 380 620" role="img" aria-label="Mobile wireframe">
-            <rect x="10" y="10" width="360" height="60" rx="10" />
-            <rect x="10" y="80" width="360" height="140" rx="10" />
-            <rect x="10" y="230" width="360" height="24" rx="6" />
-            <rect x="10" y="264" width="360" height="120" rx="10" class="stroke"/>
-            <rect x="10" y="394" width="360" height="120" rx="10" class="stroke"/>
-            <rect x="10" y="524" width="360" height="86" rx="10" />
-          </svg>
-          <p class="usage">Header with brand and menu; hero banner; category chips; product cards; footer.</p>
-        </div>
-
-        <div class="wf">
-          <h3>Desktop – Home</h3>
-          <svg viewBox="0 0 920 480" role="img" aria-label="Desktop wireframe">
-            <rect x="10" y="10" width="900" height="70" rx="12" />
-            <rect x="10" y="90" width="900" height="140" rx="12" />
-            <rect x="10" y="240" width="900" height="32" rx="8" />
-            <rect x="10" y="282" width="210" height="170" rx="12" class="stroke"/>
-            <rect x="235" y="282" width="210" height="170" rx="12" class="stroke"/>
-            <rect x="460" y="282" width="210" height="170" rx="12" class="stroke"/>
-            <rect x="685" y="282" width="225" height="170" rx="12" class="stroke"/>
-          </svg>
-          <p class="usage">Horizontal nav; wide hero; filter row; responsive product grid; consistent footer.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>7. Valid HTML & CSS</h2>
-      <p>This plan uses semantic sections, responsive layout, and the same color schema and typography that will be used on the final site.</p>
-    </section>
+  <main class="container">
+    <h1>Project Site Plan</h1>
+    <h2>Site Name</h2>
+    <p>Math Lab Station</p>
+    <h2>Purpose</h2>
+    <p>Offer affordable educational products to students and families in Africa.</p>
+    <h2>Scenarios</h2>
+    <ul class="list">
+      <li>What low-cost supplies are available for grade-school learners?</li>
+      <li>How can I order phonics cards and a math set for home?</li>
+    </ul>
+    <h2>Color Schema</h2>
+    <p>Primary teal #0ea5a6, accent amber #f59e0b, surface white, text #17212a. Used across headings, buttons, and accents.</p>
+    <h2>Typography</h2>
+    <p>System UI stack for performance and consistency.</p>
+    <h2>Wireframe</h2>
+    <p>Mobile-first stacked sections; larger screens use grid layouts.</p>
   </main>
 
-  <footer>
-    Math Lab Station • Project Site Plan
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Math Lab Station • <a href="attributions.html">Attributions</a> • <a href="#" id="videoLink">Project video</a></p>
   </footer>
+
+  <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
+
 

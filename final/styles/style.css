@@ -1,0 +1,56 @@
+:root{--clr-bg:#f8fafb;--clr-surface:#ffffff;--clr-text:#17212a;--clr-muted:#6b7280;--clr-primary:#0ea5a6;--clr-accent:#f59e0b;--radius:14px;--shadow:0 6px 20px rgba(0,0,0,.08)}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--clr-text);background:var(--clr-bg);line-height:1.55}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--clr-primary);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{line-height:1.2;margin:0 0 .5rem}
+h1{font-size:clamp(1.6rem,3vw,2.2rem)}
+h2{font-size:clamp(1.3rem,2.3vw,1.8rem)}
+h3{font-size:1.15rem}
+.container{width:min(1100px,92%);margin-inline:auto}
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.section-title{margin:1.5rem 0 .75rem}
+.list{padding-left:1.1rem}
+.note{background:#e6fffd;border:1px solid #b3f4f2;border-radius:var(--radius);padding:.75rem}
+.status{margin:1rem 0;color:var(--clr-muted)}
+.site-header{position:sticky;top:0;z-index:50;background:var(--clr-surface);box-shadow:var(--shadow)}
+.site-header .brand{display:flex;align-items:center;gap:.5rem;font-weight:700;padding:.9rem 1rem;color:var(--clr-text)}
+.site-header .brand span{color:var(--clr-primary)}
+.site-nav{display:none}
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.site-nav a{display:block;padding:.85rem 1rem;border-top:1px solid #edf2f7;color:var(--clr-text)}
+.site-nav a[aria-current="page"]{color:#fff;background:var(--clr-primary)}
+.menu-btn{position:absolute;right:.5rem;top:.5rem;border:0;background:#fff;border-radius:10px;padding:.6rem .7rem;box-shadow:var(--shadow)}
+.menu-icon,.menu-icon::before,.menu-icon::after{display:block;width:22px;height:2px;background:#111;position:relative}
+.menu-icon::before,.menu-icon::after{content:"";position:absolute;left:0}
+.menu-icon::before{top:-6px}.menu-icon::after{top:6px}
+@media (min-width:800px){.menu-btn{display:none}.site-header{display:grid;grid-template-columns:auto 1fr;align-items:center}.site-nav{display:block}.site-nav ul{flex-direction:row;justify-content:flex-end}.site-nav a{border:0}}
+.site-footer{margin-top:3rem;background:var(--clr-surface);box-shadow:var(--shadow)}
+.site-footer p{margin:0;padding:1rem;text-align:center;color:var(--clr-muted)}
+.card{background:var(--clr-surface);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
+.card img{border-radius:12px;margin-bottom:.7rem}
+.btn{display:inline-block;border:1px solid #0f766e;color:#0f766e;padding:.6rem .9rem;border-radius:10px;background:#ecfeff}
+.btn:hover{background:#cffafe;text-decoration:none}
+.btn-primary{background:var(--clr-primary);border-color:var(--clr-primary);color:#fff}
+.controls{display:grid;gap:.75rem;margin:1rem 0;padding:1rem;background:var(--clr-surface);border-radius:var(--radius);box-shadow:var(--shadow)}
+.controls label{display:grid;gap:.3rem;font-weight:600}
+.controls input,.controls select,.form input,.form textarea{border:1px solid #e5e7eb;border-radius:10px;padding:.6rem;background:#fff}
+.form{display:grid;gap:.8rem;margin:1rem 0}
+.hero{display:grid;gap:1rem;align-items:center;grid-template-columns:1fr;padding:clamp(1rem,3vw,2rem) 0}
+.hero picture img{border-radius:16px;box-shadow:var(--shadow)}
+.hero-text .btn{margin-top:.4rem}
+@media (min-width:900px){.hero{grid-template-columns:1.1fr .9fr}}
+.modal{position:fixed;inset:0;display:none}
+.modal[aria-hidden="false"]{display:block}
+.modal__dialog{position:relative;z-index:2;background:#fff;border-radius:16px;width:min(820px,92%);margin:10vh auto;padding:1rem;box-shadow:var(--shadow)}
+.modal__backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5)}
+.modal__close{position:absolute;right:.6rem;top:.4rem;border:0;background:transparent;font-size:1.6rem;line-height:1;cursor:pointer}
+#productsGrid .card{display:grid;grid-template-rows:auto auto 1fr auto;gap:.4rem}
+#productsGrid .price{font-weight:700}
+.badge{display:inline-block;background:#f1f5f9;color:#0f172a;border-radius:999px;padding:.2rem .6rem;font-size:.8rem}
+ol{padding-left:1.2rem}
+

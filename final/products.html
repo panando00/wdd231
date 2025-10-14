@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products • Math Lab Station</title>
+  <meta name="description" content="Browse affordable stationery, phonics cards, storybooks, and study resources.">
+  <meta name="author" content="Prosper Zvidzai">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span aria-hidden="true">▦</span> Math Lab Station</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span class="menu-icon"></span></button>
+    <nav id="primary-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="./" data-nav="home">Home</a></li>
+        <li><a href="products.html" data-nav="products">Products</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Catalog</h1>
+
+    <form id="controls" class="controls" autocomplete="off">
+      <label>Search
+        <input type="search" id="q" name="q" placeholder="Find an item">
+      </label>
+      <label>Category
+        <select id="category" name="category">
+          <option value="all">All</option>
+          <option value="stationery">Stationery</option>
+          <option value="literacy">Literacy</option>
+          <option value="storybooks">Storybooks</option>
+          <option value="art">Art</option>
+          <option value="study">Study</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort" name="sort">
+          <option value="name-asc">Name A–Z</option>
+          <option value="price-asc">Price low → high</option>
+          <option value="price-desc">Price high → low</option>
+          <option value="rating-desc">Top rated</option>
+        </select>
+      </label>
+      <button class="btn" type="reset">Reset</button>
+    </form>
+
+    <div id="productsGrid" class="grid grid-3"></div>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal__close" data-close aria-label="Close">×</button>
+        <div id="modalContent"></div>
+      </div>
+      <div class="modal__backdrop" data-close></div>
+    </div>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Math Lab Station • <a href="attributions.html">Attributions</a> • <a href="#" id="videoLink">Project video</a></p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
+

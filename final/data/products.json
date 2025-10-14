@@ -1,0 +1,17 @@
+[
+  {"id":"phonics-a1","name":"Phonics Flash Cards A1","price":4.5,"category":"literacy","image":"images/phonics-cards-a1.webp","rating":4.7,"stock":120,"desc":"Starter phonics set covering A–Z letter sounds."},
+  {"id":"phonics-a2","name":"Phonics Flash Cards A2","price":4.5,"category":"literacy","image":"images/phonics-cards-a2.webp","rating":4.6,"stock":110,"desc":"Blends and digraphs for early readers."},
+  {"id":"notebook-ruled","name":"Ruled Notebooks (80p) • 5 pack","price":6.9,"category":"stationery","image":"images/notebooks-ruled-80p-1.webp","rating":4.8,"stock":200,"desc":"Durable 80-page A5 ruled notebooks."},
+  {"id":"pencils-hb","name":"HB Pencils • 12 pack","price":2.4,"category":"stationery","image":"images/pencils-hb-12.webp","rating":4.5,"stock":300,"desc":"Smooth graphite pencils with erasers."},
+  {"id":"colors-12","name":"Colored Pencils • 12 pack","price":3.9,"category":"art","image":"images/colored-pencils-12.webp","rating":4.6,"stock":180,"desc":"Vibrant colors for art and diagrams."},
+  {"id":"crayons-24","name":"Wax Crayons • 24 pack","price":3.2,"category":"art","image":"images/wax-crayons-24.webp","rating":4.4,"stock":150,"desc":"Non-toxic crayons for young artists."},
+  {"id":"math-set","name":"Student Math Set (7-piece)","price":3.6,"category":"study","image":"images/math-set-7.webp","rating":4.5,"stock":160,"desc":"Compass, protractor, ruler and more."},
+  {"id":"ruler-30","name":"Shatterproof Ruler 30 cm","price":1.1,"category":"stationery","image":"images/ruler-30cm.webp","rating":4.3,"stock":260,"desc":"Clear markings for accurate lines."},
+  {"id":"erasers-4","name":"Vinyl Erasers • 4 pack","price":1.35,"category":"stationery","image":"images/erasers-4.webp","rating":4.4,"stock":240,"desc":"Low-smudge erasers for exams and class."},
+  {"id":"sharpener","name":"Twin-Hole Sharpener","price":1,"category":"stationery","image":"images/sharpener-twin.webp","rating":4.2,"stock":220,"desc":"Fits standard and jumbo pencils."},
+  {"id":"storybook-sun","name":"Storybook: Morning Sun","price":3.8,"category":"storybooks","image":"images/storybook-sunrise.webp","rating":4.9,"stock":95,"desc":"Early reader with bright illustrations."},
+  {"id":"storybook-river","name":"Storybook: River Day","price":3.8,"category":"storybooks","image":"images/storybook-river.webp","rating":4.7,"stock":100,"desc":"Adventure and new words on every page."},
+  {"id":"flash-math","name":"Math Facts Cards (1–12)","price":3.5,"category":"study","image":"images/math-facts-cards.webp","rating":4.6,"stock":130,"desc":"Practice addition, subtraction, multiplication."},
+  {"id":"whiteboard-a4","name":"Mini Whiteboard A4 + Marker","price":2.95,"category":"study","image":"images/mini-whiteboard-a4.webp","rating":4.5,"stock":140,"desc":"Reusable board for practice at home."},
+  {"id":"glue-50","name":"School Glue 50 ml • 2 pack","price":1.9,"category":"art","image":"images/school-glue-50ml.webp","rating":4.3,"stock":170,"desc":"Washable glue for crafts and projects."}
+]
